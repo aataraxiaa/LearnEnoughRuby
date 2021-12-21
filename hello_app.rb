@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-    'hello, world!'
+    'Goodbye, world!'
 end
