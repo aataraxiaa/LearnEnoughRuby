@@ -2,6 +2,6 @@ require 'sinatra'
 require 'date'
 
 get '/' do
-    dayname = DAYNAMES[Time.now.wday]
+    dayname = Date::DAYNAMES[Time.now.wday]
     "Hello, world! Happy #{dayname}"
 end
