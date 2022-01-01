@@ -15,3 +15,12 @@ TAU = 2 * Math::PI
 puts "TAU is #{TAU}"
 TAU = 1
 puts "TAU is #{TAU}"
+
+
+# Exercises 4.2.1
+# 1
+puts "Exercise 4.2.1 - 1"
+moon_landing = Time.utc(1969, 7, 20, 20, 17, 40)
+birth_day = Time.utc(1981, 8, 4, 12, 0, 0)
+time_since_moon_landing = birth_day - moon_landing
+puts "I was born #{time_since_moon_landing} seconds after the moon landing"
