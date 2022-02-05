@@ -1,0 +1,4 @@
+#! /usr/bin/env ruby
+require 'psmith_palindrome'
+
+puts "hello, world!"
