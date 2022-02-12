@@ -1,0 +1,18 @@
+#! /usr/bin/env ruby
+
+require 'open-uri'
+require 'nokogiri'
+
+# Returns the paragraphs from a Wikipedia link, stripped of referendes numbers
+# Expecially useful for text-to-speech (both native and foreign)
+
+url = ARGV.shift
+
+if !url
+    puts "No URL provided, exiting..."
+    exit
+end
+
+doc = Nokogiri::HTML(URI.open(url).read)
+doc.css('.reference').each(&:remove)
+puts doc.css('p').map(&:content).join("\n")

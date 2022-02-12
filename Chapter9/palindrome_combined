@@ -1,0 +1,4 @@
+#! /bin/zsh
+
+./palindrome_remove
+./palindrome_file
